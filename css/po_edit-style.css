@@ -1,0 +1,348 @@
+/* .container--po__details {
+  background-color: #eaeaea;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+  width: 90%;
+  margin: 20px auto;
+  border-radius: 10px;
+  margin-top: 10px;
+  padding: 20px;
+  box-sizing: border-box;
+} */
+
+/* .po__label {
+  text-align: left;
+  width: 80px;
+  margin: 10px;
+  display: inline-block;
+}
+
+.po__label--supplier {
+  width: 130px;
+}
+
+.container--po__details input {
+  padding: 2px 10px;
+  margin: 5px;
+}
+
+.container--po__details select {
+  padding: 2px 10px;
+  margin: 5px;
+}
+
+#supplier_name {
+  width: 25%;
+} */
+
+/* 
+.button__container--insert_item {
+  width: 90%;
+  text-align: right;
+  margin: 0px auto;
+} */
+
+/* .button--insert__item {
+  cursor: pointer;
+  height: 50px;
+  width: 100px;
+  border-radius: 5px;
+  background-color: midnightblue;
+  color: #ffffff;
+} */
+
+/* Table Style */
+/* 
+.container--po__table {
+  background-color: #eaeaea;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+  width: 90%;
+  height: 500px;
+  margin: 20px auto;
+  border-radius: 10px;
+  table-layout: fixed;
+  padding: 10px;
+  overflow-y: scroll;
+} */
+
+/* .po__table {
+  table-layout: fixed;
+  width: 100%;
+  color: #ffffff;
+  border-collapse: collapse;
+} */
+
+/* .po__table thead {
+  background-color: midnightblue;
+  height: 30px;
+} */
+/* 
+.po__table--item {
+  color: midnightblue;
+} */
+
+/* .container--po__table td {
+  text-align: center;
+  padding: 2px 10px;
+} */
+
+/* .container--po__table tr:nth-child(even) {
+  background-color: lightgray;
+} */
+
+.container--po__table th:nth-child(1) {
+  width: 8%;
+
+}
+
+.container--po__table th:nth-child(2) {
+  width: 30%;
+}
+
+.container--po__table th:nth-child(3) {
+  width: 8%;
+}
+
+.container--po__table th:nth-child(4) {
+  width: 6%;
+}
+
+.container--po__table th:nth-child(5) {
+  width: 8%;
+}
+
+.container--po__table th:nth-child(6) {
+  width: 8%;
+}
+
+.container--po__table th:nth-child(7) {
+  width: 8%;
+}
+
+.container--po__table th:nth-child(8) {
+  width: 8%;
+}
+
+.container--po__table th:nth-child(9) {
+  width: 8%;
+}
+
+.container--po__table th:nth-child(10) {
+  width: 5%;
+}
+
+/* .container--po__table td:nth-child(1),
+.container--po__table td:nth-child(10),
+.container--po__table td:nth-child(4) {
+  text-align: center;
+} */
+
+/* .container--po__table td:nth-child(2) {
+  text-align: left;
+} */
+
+.container--po__button {
+  margin: auto;
+  width: 90%;
+}
+
+/* .container--po__button button {
+  margin: 0px 5px;
+  cursor: pointer;
+  float: right;
+  height: 50px;
+  width: 100px;
+  border-radius: 5px;
+  background-color: midnightblue;
+  color: #ffffff;
+} */
+
+.td__edit {
+  cursor: pointer;
+  color: red;
+  font-style: italic;
+}
+
+.td__edit:hover {
+  color: orange;
+}
+
+.td__edit--delete:hover {
+  color: orange;
+}
+
+/* Item Modal */
+/* Modal Style */
+.container--modal {
+  opacity: -1;
+  position: fixed;
+  z-index: -1;
+  left: 8%;
+  top: 0;
+  width: 100%;
+  /* height: 100%; */
+  background-color: rgb(0, 0, 0);
+  transition: 0.3s;
+  background-color: rgba(0, 0, 0, 0.4);
+  height: auto;
+}
+
+
+
+.modal--table--thead td {
+  color: black;
+
+}
+
+.modal--add__item {
+  position: relative;
+  margin: 10% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  height: 60vh;
+  background-color: #f4f4f4;
+  /* border-radius: 10px; */
+}
+
+.modal--active {
+  z-index: 1;
+  opacity: 1;
+  transition: 0.3s;
+}
+
+.table--container {
+  top: 1px;
+  /* background-color: white; */
+  overflow-y: scroll;
+  height: 40vh
+}
+
+.modal--table__itemlist {
+  table-layout: fixed;
+}
+
+/* .modal--table__itemlist th {
+  font-size: 15px;
+  position: sticky;
+  top: 0;
+} */
+
+.modal--table__itemlist tbody {
+  /* font-size: 15px; */
+  text-align: left;
+  overflow-y: scroll;
+}
+
+.container--itemlist :hover {
+  cursor: pointer;
+  background-color: lightgray;
+  color: red;
+}
+
+.container--itemlist {
+  background-color: white;
+}
+
+.modal--table__itemlist td {
+  padding: 2px 5px;
+
+}
+
+/* .button--add__item {
+  color: #ffffff;
+  background-color: midnightblue;
+  height: 35px;
+  width: 100px;
+  margin-bottom: 10px;
+} */
+
+
+
+.close--modal {
+  color: red;
+  font-weight: bold;
+  position: absolute;
+  right: 20px;
+  top: 10px;
+  font-size: 20px;
+
+}
+
+.close--modal:hover {
+  cursor: pointer;
+
+}
+
+
+/* Item Code */
+/* .modal--table__itemlist th:nth-child(1) {
+  width: 10%;
+  text-align: left;
+} */
+
+/* .modal--table__itemlist td:nth-child(1) {
+  text-align: left;
+} */
+
+/* Item Name */
+.modal--table__itemlist th:nth-child(2) {
+  width: 30%;
+}
+
+/* .modal--table__itemlist td:nth-child(2) {
+  text-align: right;
+} */
+
+/* Quantity */
+.modal--table__itemlist th:nth-child(3) {
+  text-align: center;
+}
+
+.modal--table__itemlist td:nth-child(3) {
+  text-align: center;
+}
+
+/* Unit */
+/* .modal--table__itemlist th:nth-child(4) {
+  width: 10%;
+} */
+
+/* .modal--table__itemlist td:nth-child(4) {
+  text-align: center;
+} */
+
+/* Location */
+/* .modal--table__itemlist th:nth-child(5) {
+  width: 10%;
+} */
+
+/* .modal--table__itemlist td:nth-child(5) {
+  text-align: center;
+} */
+
+/* Cost */
+/* .modal--table__itemlist th:nth-child(6) {
+  width: 10%;
+} */
+
+/* .modal--table__itemlist td:nth-child(6) {
+  text-align: right;
+} */
+
+/* .button__add--item {
+  color: white;
+  cursor: pointer;
+  background-color: midnightblue;
+} */
+
+.highlight {
+  /* font-weight: bolder;
+  color: orangered; */
+  cursor: pointer;
+}
+
+.textId {
+  color: gray;
+  border: none;
+  background-color: transparent;
+}

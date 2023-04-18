@@ -1,0 +1,341 @@
+h1 {
+  text-align: center;
+  color: midnightblue;
+  letter-spacing: 5px;
+}
+
+.container--details {
+  background-color: #eaeaea;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+  width: 70%;
+  margin: 20px auto;
+  border-radius: 10px;
+  margin-top: 10px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.input__label {
+  text-align: left;
+  width: 100px;
+  margin: 10px;
+  color: midnightblue;
+  font-weight: bold;
+  display: inline-block;
+}
+
+.input__label--employee {
+  width: 150px;
+}
+
+#employee_name {
+  width: 350px;
+}
+
+.container--details input {
+  padding: 2px 10px;
+  margin: 5px;
+  width: 200px;
+}
+
+.container--details #stout_date {
+  padding: 2px 10px;
+  margin: 5px;
+  width: 200px;
+}
+
+.container--details select {
+  padding: 2px 10px;
+  margin: 5px;
+}
+
+.button__container--insert_item {
+  width: 70%;
+  text-align: right;
+  margin: 0px auto;
+}
+
+.edit__button--insert__item {
+  cursor: pointer;
+
+}
+
+/* Table Style */
+
+.container--table {
+  background-color: #eaeaea;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+  width: 100%;
+  height: 50vmin;
+  /* margin: 20px auto; */
+  border-radius: 10px;
+  /* table-layout: fixed; */
+  padding: 10px;
+  overflow-y: scroll;
+}
+
+/* .table {
+  table-layout: fixed;
+  color: #ffffff;
+  border-collapse: collapse;
+  width: 100%;
+} */
+
+/* .table thead {
+  background-color: midnightblue;
+  height: 30px;
+} */
+
+/* .table--item {
+  color: midnightblue;
+} */
+
+.container--table tr:nth-child(even) {
+  background-color: lightgray;
+  text-align: left;
+}
+
+.container--table th:nth-child(1) {
+  width: 10%;
+}
+
+.container--table th:nth-child(2) {
+  width: 45%;
+}
+
+.container--table th:nth-child(3) {
+  width: 10%;
+}
+
+.container--table th:nth-child(4) {
+  width: 10%;
+}
+
+.container--table th:nth-child(5) {
+  width: 10%;
+}
+
+.container--table th:nth-child(6) {
+  width: 10%;
+}
+
+.container--table th:nth-child(7) {
+  width: 5%;
+}
+
+.container--table td {
+  text-align: left;
+  padding: 2px 10px;
+}
+
+.container--table .td__readonly--productid {
+  text-align: left;
+  padding: 0px 10px;
+}
+
+.container--table .td__readonly--itemname {
+  text-align: left;
+  padding: 0px 10px;
+}
+
+.container--table .td__readonly--unit {
+  text-align: left;
+  padding: 0px 10px;
+}
+
+.container--edit__button {
+  width: 70%;
+  text-align: right;
+  float: right;
+  margin: 0px auto;
+}
+
+.container--edit__button button {
+  margin: 0px 5px;
+  cursor: pointer;
+  border-radius: 5px;
+
+}
+
+.td__edit {
+  cursor: pointer;
+  color: orangered;
+  font-style: italic;
+}
+
+.td__edit:hover {
+  font-weight: bold;
+}
+
+.td__edit--delete:hover {
+  color: midnightblue;
+}
+
+/* Item Modal */
+/* Modal Style */
+.container--modal {
+  opacity: 0;
+  position: fixed;
+  z-index: -1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: scroll;
+  background-color: rgb(0, 0, 0);
+  transition: 0.3s;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal--add__item {
+  position: relative;
+  margin: 10% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  height: 500px;
+  background-color: #ffffff;
+  border-radius: 10px;
+}
+
+.modal--active {
+  z-index: 1;
+  opacity: 1;
+  transition: 0.3s;
+}
+
+.table--container {
+  height: 90%;
+  overflow-y: scroll;
+}
+
+.modal--table__itemlist {
+  table-layout: fixed;
+  width: 100%;
+}
+
+.modal--table__itemlist th {
+  height: 30px;
+  background-color: midnightblue;
+  color: #ffffff;
+  font-size: 15px;
+  position: sticky;
+  top: 0;
+}
+
+.modal--table__itemlist tbody {
+  font-size: 15px;
+}
+
+.modal--table__itemlist :hover {
+  cursor: pointer;
+}
+
+.modal--table__itemlist td {
+  padding: 2px 5px;
+}
+
+.button--add__item {
+  color: #ffffff;
+  background-color: midnightblue;
+  height: 35px;
+  width: 100px;
+  margin-bottom: 10px;
+}
+
+.input--search {
+  width: 500px;
+  padding: 2px 5px;
+  margin-right: 20px;
+}
+
+.close--modal {
+  color: red;
+  font-weight: bold;
+  position: absolute;
+  right: 20px;
+  top: 10px;
+}
+
+.close--modal:hover {
+  cursor: pointer;
+  color: black;
+  font-weight: bold;
+}
+
+.modal--table__itemlist tr:hover {
+  background-color: lightgray;
+  font-size: larger;
+}
+
+/* Item Code */
+.modal--table__itemlist th:nth-child(1) {
+  width: 10%;
+}
+
+.modal--table__itemlist td:nth-child(1) {
+  text-align: center;
+}
+
+/* Item Name */
+.modal--table__itemlist th:nth-child(2) {
+  width: 30%;
+}
+
+.modal--table__itemlist td:nth-child(2) {
+  text-align: left;
+}
+
+/* Quantity */
+.modal--table__itemlist th:nth-child(3) {
+  width: 10%;
+}
+
+.modal--table__itemlist td:nth-child(3) {
+  text-align: center;
+}
+
+/* Unit */
+.modal--table__itemlist th:nth-child(4) {
+  width: 10%;
+}
+
+.modal--table__itemlist td:nth-child(4) {
+  text-align: center;
+}
+
+/* Location */
+.modal--table__itemlist th:nth-child(5) {
+  width: 10%;
+}
+
+.modal--table__itemlist td:nth-child(5) {
+  text-align: center;
+}
+
+/* Cost */
+.modal--table__itemlist th:nth-child(6) {
+  width: 10%;
+}
+
+.modal--table__itemlist td:nth-child(6) {
+  text-align: right;
+}
+
+.button__add--item {
+  color: white;
+  cursor: pointer;
+  background-color: midnightblue;
+}
+
+.highlight {
+  font-weight: bolder;
+  color: orangered;
+  cursor: pointer;
+}
+
+.textId {
+  color: gray;
+  border: none;
+  background-color: transparent;
+}

@@ -1,0 +1,77 @@
+ body {
+     overflow: initial !important;
+     box-sizing: border-box;
+ }
+
+ .bd-placeholder-img {
+     font-size: 1.125rem;
+     text-anchor: middle;
+     -webkit-user-select: none;
+     -moz-user-select: none;
+     user-select: none;
+ }
+
+ .pagination .page-item.active .page-link {
+     background-color: gainsboro;
+     color: black;
+     border: 1px solid grey;
+ }
+
+ .pagination .page-link {
+     color: black;
+ }
+
+ .pagination .page-link:hover {
+     background-color: lightgray;
+     color: black;
+
+ }
+
+
+ @media (max-width: 100px) {
+     .bd-placeholder-img-lg {
+         font-size: 3.5rem;
+     }
+ }
+
+ .h2 {
+     letter-spacing: 2px;
+ }
+
+ #example_filter input {
+     border-radius: 10px;
+     border: 2px solid #f4f4f4;
+     width: 45vh;
+ }
+
+ #example_length select {
+     border-radius: 10px;
+     border: 2px solid #f4f4f4;
+     width: 10vh;
+ }
+
+ .dataTables_length input[select] {
+     position: sticky;
+     top: 0;
+ }
+
+ #example td {
+     max-width: 20%;
+     white-space: nowrap;
+     height: 3%
+ }
+
+ .dataTables_filter,
+ .dataTables_length,
+ .dataTables_info {
+     color: black;
+     /* font-weight: bold; */
+
+ }
+
+ .dataTables_processing {
+     border: 3px solid white;
+     background-color: grey;
+     color: white;
+     text-transform: uppercase;
+ }

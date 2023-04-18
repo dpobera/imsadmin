@@ -1,0 +1,18 @@
+@media screen {
+    #printDiv {
+        font-family: monospace, verdana, arial, sans-serif;
+    }
+}
+
+@media print {
+    #printDiv {
+        font-family: monospace, georgia, times, serif;
+    }
+}
+
+@media screen,
+print {
+    #printDiv {
+        font-size: 5pt
+    }
+}

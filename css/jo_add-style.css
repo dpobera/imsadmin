@@ -1,0 +1,200 @@
+div#search {
+    position: relative;
+    width: 100%;
+    left: 0;
+
+
+}
+
+#relative {
+    position: relative;
+}
+
+#item-list {
+    position: absolute;
+    width: 100%;
+    margin: auto;
+    z-index: 12;
+}
+
+/* <li> */
+/* .search_item:hover {
+    background-color: lightgrey;
+} */
+
+/* .search_item {
+    text-align: left;
+    padding: 10px;
+    border: 1px solid lightgrey;
+    width: 780px;
+    flex: 0 0 50%;
+} */
+
+
+
+/* <ul> */
+.responsive-table {
+    display: block;
+    background-color: white;
+    border: 1px solid lightgray;
+    cursor: pointer;
+    height: 50vh;
+    overflow-y: scroll;
+    z-index: 200;
+}
+
+.responsive-table li {
+    border-radius: 0px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: -3vh;
+}
+
+.responsive-table .table-row:hover {
+    background-color: #D8D8D8;
+    cursor: pointer;
+    color: red;
+    font-weight: 500;
+}
+
+.responsive-table .table-header {
+    background-color: rgba(0, 0, 0, 0.447);
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    position: sticky;
+    top: 0;
+    padding: 7px;
+    font-weight: 500;
+
+}
+
+.responsive-table .table-row {
+    background-color: #ffffff;
+    border-bottom: 1px dashed lightgrey;
+    /* box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.1); */
+}
+
+.responsive-table .col-1 {
+    flex-basis: 10%;
+}
+
+.responsive-table .col-2 {
+    flex-basis: 35%;
+}
+
+.responsive-table .col-3 {
+    flex-basis: 10%;
+}
+
+.responsive-table .col-4 {
+    flex-basis: 10%;
+}
+
+.responsive-table .col-5 {
+    flex-basis: 10%;
+}
+
+.responsive-table .col-6 {
+    flex-basis: 10%;
+}
+
+.responsive-table .col-7 {
+    flex-basis: 5%;
+}
+
+@media all and (max-width: 767px) {
+    .responsive-table .table-header {
+        display: none;
+    }
+
+    .responsive-table li {
+        display: block;
+    }
+
+    .responsive-table .col {
+        flex-basis: 100%;
+    }
+
+    .responsive-table .col {
+        display: flex;
+        /* padding: 10px 0; */
+    }
+
+    .responsive-table .col:before {
+        color: #6C7A89;
+        /* padding-right: 10px; */
+        content: attr(data-label);
+        flex-basis: 50%;
+        text-align: right;
+    }
+}
+
+.container--edit__button {
+    width: 70%;
+    text-align: right;
+    float: right;
+    margin: 0px auto;
+    margin-right: 2vh;
+}
+
+/* 
+.item_table {
+    margin-top: -50px;
+    height: 35vh;
+    overflow-y: scroll;
+    border: 1px solid lightgrey;
+    background-color: white;
+    width: 100%;
+
+} */
+
+.item_table--thead {
+    position: sticky;
+    top: 0;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    padding: 7px;
+    font-weight: 500;
+    color: grey;
+}
+
+.item_table td {
+    margin: 0;
+    border-bottom: 1px dashed lightgrey;
+}
+
+.item_table--tbody:hover {
+    background-color: #f4f4f4;
+    cursor: pointer;
+
+}
+
+
+/* Style for crud-table */
+#crud_table {
+    font-size: 13px;
+}
+
+/* Style for Order ID Input box */
+.newID {
+    margin-left: 5px;
+    color: red;
+}
+
+
+
+/* 
+        input#item-name {
+            position: relative;
+            width: 430px;
+        } */
+
+.hidden {
+    display: none;
+}
+
+.delete {
+    background-color: none;
+}

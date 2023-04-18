@@ -1,0 +1,12 @@
+.container--login {
+  text-align: center;
+  width: 300px;
+  margin: 100px auto;
+}
+
+.container--login input {
+  height: 30px;
+  margin: 5px;
+  padding: 5px;
+}
+

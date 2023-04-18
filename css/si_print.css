@@ -1,0 +1,35 @@
+body{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.dr_paper {
+    /* border: 1px solid black; */
+    width:21cm;
+    height:25.1cm
+}
+
+.dr_table {
+    position: absolute;
+    /* border: 1px solid black; */
+    width:20.4cm;
+    height:6.9cm;
+    margin-left: 0.3cm;
+    margin-right: 0.4cm;
+    margin-top: 7.5cm;
+}
+.items {
+    width: 100%;
+    border-collapse: collapse;
+    /* border: 1px solid black; */
+}
+/* .items td {
+    border: 1px solid black;
+} */
+
+/* .ep_table table {
+    width: 100%;
+    border: 1px solid black;
+    border-collapse: collapse;
+} */

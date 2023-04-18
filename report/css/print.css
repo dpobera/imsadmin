@@ -1,0 +1,10 @@
+@media print {
+
+    #printDiv {
+        border: 2px solid lightgray;
+        padding: 2px;
+        background-color: #F8F8F8;
+        font-size: small;
+
+    }
+}
