@@ -17,10 +17,10 @@ if (isset($_POST['addcus'])) {
 
     if (mysqli_query($db, $query)) {
 
-        // echo "<script>
-        // alert('Record Created Successfully!');
-        // location.href = 'bo_customer.php';
-        // </script>";
+        echo "<script>
+        alert('Record Created Successfully!');
+        location.href = '../../cust-index.php';
+        </script>";
     } else {
         echo "<script>alert('Failed to create record !');</script>";
     }

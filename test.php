@@ -1,91 +1,72 @@
-<?php
-// Create database connection
-$db = mysqli_connect("localhost", "root", "", "inventorymanagement");
+<table>
+    <thead>
+        <tr>
+            <th></th>
+            <th>Column 1</th>
+            <th>Column 2</th>
+        </tr>
+    </thead>
+    <tbody>
+        <?php
+        // Connect to the database
+        $conn = mysqli_connect('localhost', 'root', '', 'inventorymanagement');
 
-// Initialize message variable
-$msg = "";
+        // Query the database to retrieve the rows
+        $result = mysqli_query($conn, "SELECT * FROM stin_tb ORDER BY stin_id DESC LIMIT 10");
 
-// If upload button is clicked ...
-if (isset($_POST['upload'])) {
-    // Get image name
-    $image = $_FILES['image']['name'];
-    // Get text
-    $image_text = mysqli_real_escape_string($db, $_POST['image_text']);
 
-    // image file directory
-    $target = "images/" . basename($image);
+        // Get the row ID and checkbox value from the AJAX request
+        $stin_id = $_POST['stin_id'];
+        $checked = $_POST['checked'];
 
-    $sql = "INSERT INTO images (image, image_text) VALUES ('$image', '$image_text')";
-    // execute query
-    mysqli_query($db, $sql);
+        // Connect to the database
+        $conn = mysqli_connect('localhost', 'root', '', 'inventorymanagement');
 
-    if (move_uploaded_file($_FILES['image']['tmp_name'], $target)) {
-        $msg = "Image uploaded successfully";
-    } else {
-        $msg = "Failed to upload image";
-    }
-}
-$result = mysqli_query($db, "SELECT * FROM images");
-?>
-<!DOCTYPE html>
-<html>
+        // Update the row in the database
+        mysqli_query($conn, "UPDATE stin_tb SET stin_code='$stin_code', stin_title='$stin_title' WHERE stin_id='$stin_id'");
 
-<head>
-    <title>Image Upload</title>
-    <style type="text/css">
-        #content {
-            width: 50%;
-            margin: 20px auto;
-            border: 1px solid #cbcbcb;
+        // Close the database connection
+        mysqli_close($conn);
+
+        // Loop through the rows and display them in the table
+        while ($row = mysqli_fetch_assoc($result)) {
+            echo "<tr id='" . $row['stin_id'] . "'>";
+            echo "<td><input type='checkbox' class='row-checkbox' value='" . $row['stin_id'] . "'></td>";
+            echo "<td>" . $row['stin_code'] . "</td>";
+            echo "<td>" . $row['stin_title'] . "</td>";
+            echo "</tr>";
         }
 
-        form {
-            width: 50%;
-            margin: 20px auto;
-        }
+        // Close the database connection
+        mysqli_close($conn);
+        ?>
+    </tbody>
+</table>
+<script>
+    $(document).ready(function() {
+        // Listen for clicks on the row checkboxes
+        $('.row-checkbox').click(function() {
+            // Get the ID of the row
+            var stin_id = $(this).val();
 
-        form div {
-            margin-top: 5px;
-        }
+            // Get the value of the checkbox (checked or unchecked)
+            var checked = $(this).is(':checked');
 
-        #img_div {
-            width: 80%;
-            padding: 5px;
-            margin: 15px auto;
-            border: 1px solid #cbcbcb;
-        }
-
-        #img_div:after {
-            content: "";
-            display: block;
-            clear: both;
-        }
-
-        img {
-            float: left;
-            margin: 5px;
-            width: 300px;
-            height: 140px;
-        }
-    </style>
-</head>
-
-<body>
-    <div id="content">
-
-        <form method="POST" enctype="multipart/form-data">
-            <input type="hidden" name="size" value="1000000">
-            <div>
-                <input type="file" name="image">
-            </div>
-            <div>
-                <textarea id="text" cols="40" rows="4" name="image_text" placeholder="Say something about this image..."></textarea>
-            </div>
-            <div>
-                <button type="submit" name="upload">POST</button>
-            </div>
-        </form>
-    </div>
-</body>
-
-</html>
+            // Make an AJAX request to update the row
+            $.ajax({
+                url: 'update_row.php',
+                type: 'POST',
+                data: {
+                    stin_id: stin_id,
+                    checked: checked
+                },
+                success: function(response) {
+                    // Handle the response from the server
+                },
+                error: function() {
+                    // Handle any errors that occur during the request
+                }
+            });
+        });
+    });
+</script>

@@ -34,7 +34,7 @@ include "php/config.php"; ?>
 <body style="background-color: white;">
     <header class="navbar navbar-dark bg-dark bg-gradient sticky-top flex-md-nowrap p-0">
         <a class="navbar-brand bg-dark bg-gradient col-md-3 col-lg-2 me-0 px-3" href="#">
-            <img src="assets/brand/pacclogo.png" alt="" width="25" style="margin-bottom: 3px;"> PACC IMS v2.0
+            <img src="assets/brand/pacclogo.png" alt="" width="25" style="margin-bottom: 3px;"> PACC IMS v2.0 / ADMIN
         </a>
         <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -54,7 +54,7 @@ include "php/config.php"; ?>
         <main class="col-md-9 ms-sm-auto col-md-10 px-md-4">
             <!-- Itemlist Records header-->
             <div class="d-flex justify-content-between flex-wrap align-items-center pt-3  mb-3 mt-2 p-3 border-bottom shadow-sm bg-light" style="background-color: #ededed;border:1px solid lightgrey">
-                <h1 class="h2 text-secondary font-monospace">STOCK INVENTORY IN </h1>
+                <h1 class="h2 text-secondary font-monospace">STOCK INVENTORY IN / ADMIN PAGE </h1>
                 <div class="btn-toolbar mb-2 mb-md-0">
                     <div class="btn-group me-2">
                         <!-- <button type="button" class="btn btn-sm btn-outline-secondary">Export</button> -->

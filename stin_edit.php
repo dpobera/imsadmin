@@ -102,6 +102,7 @@ include 'php/stin_edit-inc.php'
                             <div class="container--edit__button mb-2" style="float: left;margin-top:-20px;letter-spacing:1px';margin-right:10px;width:50vh"><br>
                                 <button class=" edit__button button--update btn btn-secondary bg-gradient" name='update'>Update Records</button>
 
+
                             </div>
                         </div>
                     </div>
@@ -112,7 +113,7 @@ include 'php/stin_edit-inc.php'
                                 <thead class="bg-light text-secondary">
                                     <tr style="text-align: left;">
                                         <th>PRODUCT ID</th>
-                                        <th style="text-align:left;" width="50%">ITEM NAME</th>
+
                                         <th>QTY</th>
                                         <th>UNIT</th>
                                         <th width="30%">PRODUCT REMARKS</th>
@@ -156,8 +157,15 @@ include 'php/stin_edit-inc.php'
                                         }
                                     }
                                     ?>
+
+
+
+
+
+
                                 </tbody>
                             </table>
+
                         </div>
                     </div>
 

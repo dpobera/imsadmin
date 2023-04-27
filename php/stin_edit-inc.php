@@ -47,6 +47,11 @@ if (isset($_GET['edit'])) {
     }
 }
 
+
+
+
+
+
 // If po_edit-page.php update button is set
 if (isset($_POST['update'])) {
 
@@ -101,6 +106,13 @@ if (isset($_POST['update'])) {
 
     header("location: ../stin_edit.php?edit&updated&id=$stinId");
 }
+
+
+
+
+
+
+
 
 // If po_edit-page.php update button is set
 if (isset($_POST['cancelupdate'])) {

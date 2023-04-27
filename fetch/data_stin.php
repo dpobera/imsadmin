@@ -53,9 +53,8 @@ while ($row = mysqli_fetch_assoc($query)) {
 
     if ($closed == 0) {
         $str = '<center class="text-warning"><i class="bi bi-circle-fill" title="OPEN"></i></center>';
-        $disable = ' <a href="stin_edit.php?edit&id=' . $row["stin_id"] . '" disabled> <button  class="btn btn-secondary btn-sm bg-gradient" title="Edit"><i class="bi bi-pencil-fill"></i></button></a>
-      <a href="commit/stin_commit.php?id=' . $row["stin_id"] . '">
-                <button class="btn btn-secondary btn-sm bg-gradient" title="Commit Record"><i class="bi bi-check2-circle"></i></button></a>
+        $disable = ' 
+      
                
  
                
@@ -63,15 +62,8 @@ while ($row = mysqli_fetch_assoc($query)) {
     } else {
         $str = '<center class="text-danger"><i class="bi bi-dash-circle-fill" title="CLOSED"></i></center>';
         $disable = '
-        <button style="cursor:not-allowed" class="btn btn-outline-secondary btn-sm" disabled>
-		<i class="bi bi-pencil-fill"></i>
-		</button>
-        <button style="cursor:not-allowed" class="btn
-         btn-outline-secondary btn-sm" disabled>
-		<i class="bi-check2-circle"></i>
-		</button>
         
-      
+    
        
       ';
     }
@@ -87,7 +79,9 @@ while ($row = mysqli_fetch_assoc($query)) {
     $sub_array[] = $disable . ' 
 
     <a href="stin_edit.php?edit&id=' . $row["stin_id"] . '">
-    <button class="btn btn-danger btn-sm bg-gradient" title="Details" style="">EDIT</button></a>';
+    <button class="btn btn-success btn-sm bg-gradient" title="Details" style="">EDIT</button></a>
+    <a href="commit/stin_recommit.php?id=' . $row["stin_id"] . '">
+    <button class="btn btn-primary btn-sm bg-gradient" title="Commit Record">RECOMIT</button></a>';
     $sub_array[] = '<center>' . $row["user_name"] . '</center>';
     $sub_array[] = $str;
     $data[] = $sub_array;
